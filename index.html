@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mis 15 - Juliana</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.151);
+        background: linear-gradient(180deg, #e75480, #2c003e);
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-top: 50px;
+        color: black;
+    }
+
+    .stars {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: url('data:image/jpeg;base64,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');
+        animation: moveStars 20s linear infinite;
+        z-index: -1;
+    }
+
+
+    @keyframes moveStars {
+        from {background-position: 0 0;}
+        to {background-position: 1000px 1000px;}
+    }
+
+    .card {
+        margin: 30px auto;
+        padding: 20px;
+        max-width: 400px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        color: black;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 20px;
+        background: #ff85a2;
+        color: rgba(255, 255, 255, 0.925);
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background: #ff4f81;
+    }
+
+    .countdown {
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+
+    <h1>✨ Mis 15 ✨</h1>
+    <p>Una noche mágica bajo las estrellas</p>
+
+    <div class="card">
+        <h2>Juliana 💖</h2>
+        <p>Te invito a celebrar este momento único</p>
+    </div>
+
+    <div class="card">
+        <p>📅 5 de Enero</p>
+        <p>🕒 21:00 hs</p>
+        <p>📍 Salón Ejemplo</p>
+    </div>
+
+    <div class="card">
+        <p>🌸 Dress code: Elegante</p>
+    </div>
+
+    <div class="card">
+        <a class="btn" href="https://wa.me/549XXXXXXXXX?text=Confirmo%20asistencia%20💖">Confirmar asistencia</a>
+        <a class="btn" href="https://maps.google.com">Ver ubicación</a>
+    </div>
+
+    <div class="countdown" id="countdown"></div>
+
+</div>
+
+<script>
+    const eventDate = new Date("Jan 5, 2026 21:00:00").getTime();
+
+    const countdown = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = eventDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+        document.getElementById("countdown").innerHTML =
+            "✨ Faltan " + days + " días ✨";
+
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown").innerHTML = "¡Es hoy! 💖";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
