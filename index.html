@@ -198,8 +198,7 @@ function confirmarAsistencia() {
     let texto = encodeURIComponent(nombre + " confirmó asistencia a los 15 de Juli 💖");
     let url = "https://wa.me/" + numeroAnfitrion + "?text=" + texto;
 
-    window.open(url, "_blank");
-    alert("¡Gracias " + nombre + "! Se envió tu confirmación a Juliana 🎉");
+    window.location.href = url;
 }
 
 </script>
